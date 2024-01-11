@@ -1,0 +1,16 @@
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin setTypography($size, $weight, $height, $spacing) {
+  @include fontSize($size);
+  font-weight: $weight;
+  line-height: calculateRem($height);
+  letter-spacing: $spacing;
+}

@@ -1,0 +1,103 @@
+@import "mixins";
+@import "variables";
+
+@import url("https://fonts.googleapis.com/css2?family=T-Star+Pro:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trebuchet+MS:wght@300;400;500;600;700;800;900&display=swap");
+
+// Heading
+@mixin heading-1 {
+  font-family: "T-Star Pro", sans-serif;
+  @include setTypography(52px, 300, 64px, normal);
+  @media only screen and (max-width: 780px) {
+    @include setTypography(40px, 300, 64px, normal);
+  }
+}
+
+@mixin heading-2 {
+  font-family: "T-Star Pro", sans-serif;
+  @include setTypography(42px, 400, 56px, normal);
+  @media only screen and (max-width: 780px) {
+    @include setTypography(30px, 400, 56px, normal);
+  }
+}
+
+@mixin heading-3 {
+  font-family: "T-Star Pro", sans-serif;
+  @include setTypography(36px, 400, 48px, normal);
+  @media only screen and (max-width: 780px) {
+    @include setTypography(22px, 400, 48px, normal);
+  }
+}
+
+@mixin heading-4 {
+  font-family: "T-Star Pro", sans-serif;
+  @include setTypography(28px, 400, 40px, normal);
+  @media only screen and (max-width: 780px) {
+    @include setTypography(20px, 400, 40px, normal);
+  }
+}
+
+@mixin heading-5 {
+  font-family: "T-Star Pro", sans-serif;
+  @include setTypography(24px, 500, 32px, normal);
+  @media only screen and (max-width: 780px) {
+    @include setTypography(18px, 500, 32px, normal);
+  }
+}
+
+@mixin heading-6 {
+  font-family: "T-Star Pro", sans-serif;
+  @include setTypography(18px, 400, 24px, normal);
+  @media only screen and (max-width: 780px) {
+    @include setTypography(16px, 400, 24px, normal);
+  }
+}
+
+// body
+
+@mixin body-1 {
+  font-family: "Trebuchet MS", sans-serif;
+  @include setTypography(20px, 400, 24px, normal);
+  @media only screen and (max-width: 780px) {
+    @include setTypography(18px, 400, 24px, normal);
+  }
+}
+
+@mixin body-2 {
+  font-family: "Trebuchet MS", sans-serif;
+  @include setTypography(18px, 400, 24px, normal);
+  @media only screen and (max-width: 780px) {
+    @include setTypography(16px, 400, 24px, normal);
+  }
+}
+
+@mixin body-3 {
+  font-family: "Trebuchet MS", sans-serif;
+  @include setTypography(16px, 400, 24px, normal);
+  @media only screen and (max-width: 780px) {
+    @include setTypography(14px, 400, 24px, normal);
+  }
+}
+
+@mixin body-4 {
+  @include setTypography(14px, 400, 24px, normal);
+  @media only screen and (max-width: 780px) {
+    @include setTypography(12px, 400, 16px, normal);
+  }
+}
+
+@mixin text-link {
+  font-family: "T-Star Pro", sans-serif;
+  @include setTypography(16px, 700, 24px, normal);
+  @media only screen and (max-width: 780px) {
+    @include setTypography(14px, 700, 24px, normal);
+  }
+}
+
+@mixin large-1 {
+  font-family: "T-Star Pro", sans-serif;
+  @include setTypography(72px, 300, 80px, normal);
+  @media only screen and (max-width: 780px) {
+    @include setTypography(52px, 300, 80px, normal);
+  }
+}

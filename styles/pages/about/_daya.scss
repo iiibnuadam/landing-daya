@@ -1,0 +1,79 @@
+@import "../../custom";
+
+.daya {
+  padding: 100px 0;
+  background: linear-gradient(to top, white 60%, transparent 50%);
+  &--title {
+    @include heading-2;
+  }
+  &--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @include media-breakpoint-down(lg) {
+    &--title {
+      text-align: center;
+    }
+  }
+}
+
+.list-number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  .number-item {
+    &--subtitle {
+      @include body-1;
+      color: rgba(0, 0, 0, 0.4);
+    }
+    &--number {
+      @include large-1;
+      color: $danger;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+    .number-item {
+      margin-bottom: 20px;
+      &--subtitle {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.row-daya-content {
+  margin-top: 32px;
+  &--title {
+    @include heading-3;
+    margin: 16px 0;
+  }
+  &--description {
+    @include body-3;
+    color: $dark-gray;
+  }
+  &--btn {
+    color: $danger;
+    &:hover {
+      color: $mid-red;
+    }
+  }
+  .col-content-1 {
+    width: 48%;
+    height: 100%;
+  }
+  .col-content-2 {
+    width: 52%;
+    height: 100%;
+  }
+  @include media-breakpoint-down(lg) {
+    .col-content-1 {
+      width: 100%;
+    }
+    .col-content-2 {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../custom";
+
+.hero-about {
+  position: relative;
+  height: 100vh;
+  background: $dark-gray-2;
+  padding: 150px 0 50px 0;
+  .container {
+    color: white;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .row-content {
+      height: 100%;
+      align-content: flex-end;
+      padding-bottom: 150px;
+    }
+  }
+  &--title {
+    @include heading-2;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  &--desctiption {
+    @include body-3;
+  }
+  &--breadcrumbs {
+    @include body-2;
+    span {
+      font-weight: 700;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.bg-hero-about {
+  background: url("/images/bg-hero-about.png") no-repeat center center/cover;
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.bg-pentagon-1 {
+  background: url("/images/pentagon-1.png") no-repeat center center/cover;
+  position: absolute;
+  width: 25vw;
+  height: 50vh;
+  top: 22%;
+  left: -5%;
+  transform: translateX(50%);
+  z-index: 0;
+}
+
+.bg-pentagon-2 {
+  background: url("/images/pentagon-2.png") no-repeat center center/cover;
+  position: absolute;
+  width: 23vw;
+  height: 50vh;
+  left: 0;
+  bottom: 3%;
+  z-index: 0;
+}

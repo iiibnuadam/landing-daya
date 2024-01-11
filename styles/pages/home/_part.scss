@@ -1,0 +1,25 @@
+@import "../../custom";
+
+.part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/images/bg-part.png") no-repeat center center/cover;
+  height: 600px;
+  &--title {
+    @include heading-2;
+    font-weight: 300 !important;
+  }
+  &--subtitle {
+    @include body-3;
+    color: rgba(255, 255, 255, 0.8);
+    width: 60%;
+    margin: 20px 0;
+    font-weight: 400 !important;
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+}
